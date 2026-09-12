@@ -4,6 +4,11 @@ namespace frontend.ViewModels;
 
 public partial class MainViewModel : ViewModelBase
 {
-    [ObservableProperty]
-    public partial string Greeting { get; set; } = "Welcome to Avalonia!";
+    private string _greeting = "Hello, World!";
+
+    public string Greeting
+    {
+        get => _greeting;
+        set => SetProperty(ref _greeting, value);
+    }
 }
