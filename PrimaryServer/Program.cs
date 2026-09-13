@@ -26,7 +26,7 @@ app.MapPost("/api/posts", (CreatePostPayloads payload) =>
 app.MapGet("/api/ping", (NetworkPacket packet) =>{
     return Results.Ok(new {Token = "12345"} );
 });
-
+app.MapPost("/api/posts/{postsId}/comments", (// какой еще гуид если в тз уже существует) => )  // разбирайся
 app.MapHub<SocialHub>("/hubs/social");
 
 app.Run();
