@@ -1,13 +1,13 @@
 namespace Primary.Models;
 
-public class CreatePostPayload
+public class CreatePostPayloads
 {
     public Guid PostId {get; set;}
     public string PostText {get; set;}
     public DateTime PostedAt {get; set;}
     public required User Author {get; set;}
 
-    public CreatePostPayload(User author, string postText)
+    public CreatePostPayloads(User author, string postText)
     {
         PostId = Guid.NewGuid();
         Author = author;

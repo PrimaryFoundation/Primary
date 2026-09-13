@@ -1,4 +1,3 @@
-// класс нетворк пакет имеет 3 поля - Type(тип enum), Payload(string, передаваемая инфа серверу) и RequestId(Guid который генерируется ОДИН раз на ОДНУ инициализацию)
 namespace Primary.Models;
 public class NetworkPacket
 {
