@@ -7,5 +7,5 @@ public enum ReactionType
     Haha,
     Wow,
     Sad,
-    Angry
+    Angry,
 }
